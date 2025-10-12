@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box2{
+    height: 30vh;
+    width: 30vw;
+    border: 1px solid rgb(206, 206, 206);
+    background-color: rgb(236, 235, 235);
+    box-sizing: border-box;
+    position: relative;
+    top: 25vh;
+    left: 25vw;
+}
+
+.child1{
+    height: 15vh;
+    width: 100%;
+    /* border: 1px solid rgb(220, 220, 220); */
+    background-color: rgb(73, 244, 73);
+    position: absolute;
+}
+
+.child2{
+    height: 15vh;
+    width: 100%;
+    /* border: 1px solid rgb(220, 220, 220); */
+    background-color: rgb(73, 185, 73);
+    position: absolute;
+}
