@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>this is homepage</h1>
+
+<h1>{{ greeting | title }}</h1>
+
+<h1> there are {{ fruits | length }} fruits in the list </h1>
+
+<ul>
+
+    {% for fruit in fruits %}
+
+    <li>{{ fruit }}</li>
+
+    {% endfor %}
+
+</ul>
+
+{% endblock  %}
