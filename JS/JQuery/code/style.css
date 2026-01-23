@@ -1,0 +1,13 @@
+.test {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(154, 144, 130);
+    text-align: center;
+}
+
+.font {
+    font-size: 25px;
+}
+
+h1 {
+    display: inline;
+}
