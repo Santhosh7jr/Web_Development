@@ -1,0 +1,16 @@
+.container{
+    border: 2px solid;
+    height: 500px;
+    width: 100vw;
+}
+
+.row{
+    border: 2px solid;
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    border: 2px solid;
+    height: 100%;
+}
