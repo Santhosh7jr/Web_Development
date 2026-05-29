@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+}
+
+/* Main card */
+.container {
+    background: white;
+    padding: 40px;
+    width: 450px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    animation: fadeIn 0.6s ease;
+}
+
+/* Joke box */
+.joke-box {
+    background: #f8f9fc;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+/* Setup styling */
+.setup {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Delivery styling */
+.delivery {
+    font-size: 18px;
+    color: #555;
+    opacity: 0;
+    animation: reveal 1s ease forwards;
+    animation-delay: 1s; /* suspense effect */
+}
+
+/* Button */
+.back-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #4e73df;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #2e59d9;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes reveal {
+    to { opacity: 1; }
+}

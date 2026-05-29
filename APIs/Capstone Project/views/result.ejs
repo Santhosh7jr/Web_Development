@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joke Result</title>
+    <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>😂 Your Joke</h1>
+
+        <div class="joke-box">
+
+            <% if (typeof setup === "undefined" && typeof delivery === "undefined") { %>
+                
+                <p class="setup">
+                    Why did the ghost go to the bar?
+                </p>
+
+                <p class="delivery">
+                    To get sheet faced.
+                </p>
+
+            <% } else { %>
+
+                <p class="setup">
+                    <%= setup %>
+                </p>
+
+                <% if (typeof delivery !== "undefined") { %>
+                    <p class="delivery">
+                        <%= delivery %>
+                    </p>
+                <% } %>
+
+            <% } %>
+
+        </div>
+
+        <a href="/" class="back-btn">Get Another Joke</a>
+
+    </div>
+
+</body>
+</html>
