@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Blog</title>
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+
+  <form action="/blogs" method="post">
+    <div id="parent">
+      <h2>Create New Blog</h2>
+
+      <div>
+        <label>Title</label>
+        <input type="text" name="heading" required>
+      </div>
+
+      <div>
+        <label>Date</label>
+        <input type="date" name="date">
+      </div>
+
+      <div>
+        <label>Image URL</label>
+        <input type="text" name="image">
+      </div>
+
+      <div>
+        <label>Content</label>
+        <textarea name="paragraph" rows="4" required></textarea>
+      </div>
+
+      <button type="submit">Submit Blog</button>
+    </div>
+  </form>
+
+</body>
+</html>
