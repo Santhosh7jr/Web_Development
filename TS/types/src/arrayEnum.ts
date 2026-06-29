@@ -21,5 +21,17 @@ employees.push({name : "giri", age : 21});
 
 const details : [string, number : 20 | 21, boolean?] = ["guru", 20, false];
 const details1 : [string, number : 20 | 21, boolean?] = ["giri", 22];
-console.log(details);
-console.log(details1);
+// console.log(details);
+// console.log(details1);
+
+enum Days {
+  SUNDAY,
+  MONDAY,
+  TUESDAY,
+  WEDNESDAY,
+  THURSDAY,
+  FRIDAY,
+  SATURDAY
+}
+
+console.log(Days.MONDAY);
